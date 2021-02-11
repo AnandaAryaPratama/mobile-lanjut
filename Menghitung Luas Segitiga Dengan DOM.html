@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas Segitiga</title>
+</head>
+<body>
+    <h3>Menghitung Luas Segitiga Menggunakan DOM</h3>
+    <p>Ananda Arya Pratama</p>
+    <p>2018071002</p>
+    <p>Alas</p>
+    <input type="text" id="alas">
+    <p>Tinggi</p>
+    <input type="text" id="tinggi">
+    <input type="button" value="Hitung" onclick="hitung();">
+    <p>Hasil : </p> <span id="hasil"></span>
+
+    <script>
+        function hitung() {
+            var alas = document.getElementById('alas').value;
+            var tinggi = document.getElementById('tinggi').value;
+            var hasil = alas * tinggi / 2;
+            
+            document.getElementById('hasil').innerHTML = hasil;
+        }
+    </script>
+</body>
+</html>
